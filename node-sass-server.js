@@ -45,7 +45,11 @@ const onRenderCallback = (error, result) => {
 const applyPostCSS = () => {
   return fs.readFile(FIRST_PASS_CSS, (err, css) => {
     postcss([autoprefixer, cssnano])
-      .process(css, { from: FIRST_PASS_CSS, to: SECOND_PASS_CSS })
+      .process(css, {
+        from: FIRST_PASS_CSS,
+        to: SECOND_PASS_CSS,
+        map: true
+      })
       .then(result => {
         fs.writeFile(SECOND_PASS_CSS, result.css);
         if (result.map)
@@ -56,7 +60,7 @@ const applyPostCSS = () => {
 
 const config = {
   file: MAIN_SCSS_FILE,
-  outFile: CSS_DIR,
+  outFile: FIRST_PASS_CSS,
   sourceMap: true
 };
 

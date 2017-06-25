@@ -1,9 +1,9 @@
 {
 	"version": 3,
-	"file": "dist",
+	"file": "styles.css",
 	"sources": [
-		"styles/main.scss",
-		"styles/_module.scss"
+		"../styles/main.scss",
+		"../styles/_module.scss"
 	],
 	"names": [],
 	"mappings": "ACAA,AAAA,OAAO,CAAC;EACN,KAAK,EAAE,KAAK,GACb;;AAED,AAAA,aAAa,CAAC;EACZ,SAAS,EAAE,IAAI;EACf,SAAS,EAAE,gBAAgB;EAC3B,UAAU,EAAE,iBAAiB,GAC9B"
