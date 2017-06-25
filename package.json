@@ -1,7 +1,7 @@
 {
   "name": "node-sass-test",
   "version": "1.0.0",
-  "main": "styles.js",
+  "main": "node-sass-server.js",
   "license": "MIT",
   "dependencies": {
     "autoprefixer": "^7.1.1",
