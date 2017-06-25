@@ -1,10 +1,13 @@
-# Example: Using `node-sass` with `nodemon`
+### Example: Using `node-sass` with `nodemon`
 
 ```
 yarn run watch:styles
 ```
 
-Recompiles Sass files any time a file changes within the `./styles` directory.
+#### What happens
+
+`nodemon` watches for any changes in the `./styles` directory. If a change is detected, then `node-sass`
+is re-executed within `node-sass-server.js`.
 
 You may edit `node-sass-server.js` to configure any PostCSS options, or to add entrypoints and destination files.
 
