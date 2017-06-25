@@ -1,0 +1,9 @@
+.module {
+  color: coral; }
+
+.module__item {
+  font-size: 2rem;
+  transform: translateX(-50%);
+  transition: transform 1s ease; }
+
+/*# sourceMappingURL=dist.map */
